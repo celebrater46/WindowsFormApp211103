@@ -1,0 +1,9 @@
+C:\Users\Enin\RiderProjects\WindowsFormsApp211103\WindowsFormsApp211103\bin\Debug\WindowsFormsApp211103.exe.config
+C:\Users\Enin\RiderProjects\WindowsFormsApp211103\WindowsFormsApp211103\bin\Debug\WindowsFormsApp211103.exe
+C:\Users\Enin\RiderProjects\WindowsFormsApp211103\WindowsFormsApp211103\bin\Debug\WindowsFormsApp211103.pdb
+C:\Users\Enin\RiderProjects\WindowsFormsApp211103\WindowsFormsApp211103\obj\Debug\WindowsFormsApp211103.csproj.AssemblyReference.cache
+C:\Users\Enin\RiderProjects\WindowsFormsApp211103\WindowsFormsApp211103\obj\Debug\WindowsFormsApp211103.Properties.Resources.resources
+C:\Users\Enin\RiderProjects\WindowsFormsApp211103\WindowsFormsApp211103\obj\Debug\WindowsFormsApp211103.csproj.GenerateResource.cache
+C:\Users\Enin\RiderProjects\WindowsFormsApp211103\WindowsFormsApp211103\obj\Debug\WindowsFormsApp211103.csproj.CoreCompileInputs.cache
+C:\Users\Enin\RiderProjects\WindowsFormsApp211103\WindowsFormsApp211103\obj\Debug\WindowsFormsApp211103.exe
+C:\Users\Enin\RiderProjects\WindowsFormsApp211103\WindowsFormsApp211103\obj\Debug\WindowsFormsApp211103.pdb
