@@ -30,14 +30,17 @@ namespace WindowsFormsApp211103
             Form1 form1 = new Form1();
             form1.Text = "Hello World!";
             
-            // Label label = new Label();
-            // label.Text = "Hello World Again!";
-            // label.Parent = form1;
+            Label label = new Label();
+            label.Text = "Hello World Again!";
+            label.Parent = form1;
 
             PictureBox pictureBox = new PictureBox();
             // pictureBox.Image = Image.FromFile("img/sunSymbol.png");
             // pictureBox.Image = Image.FromFile("img\\sunSymbol.png");
             pictureBox.Image = Image.FromFile("C:\\Users\\Enin\\RiderProjects\\WindowsFormsApp211103\\WindowsFormsApp211103\\img\\sunSymbol.png");
+            pictureBox.Top = 30;
+            pictureBox.Width = 150;
+            pictureBox.Height = 150;
             pictureBox.Parent = form1;
             
             // Application.Run(new Form1()); // Succeeded
