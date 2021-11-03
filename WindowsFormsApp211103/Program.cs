@@ -9,6 +9,7 @@ namespace WindowsFormsApp211103
 {
     static class Program
     {
+        // int num = 100;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -37,10 +38,24 @@ namespace WindowsFormsApp211103
             // label1.Parent = form1;
             
             Label label2 = new Label();
-            int num = 100;
+            int num = 100; // Failed
+
+            label2.Width = 300; // A part of string will be hidden without this
+            
+            // var num = "100"; // Succeeded
             // label2.Text = "変数 num の値は " + num + "です。";
+            // label2.Text = num; // Failed
+            // label2.Text = num.ToString(); // Succeeded
             // label2.Text = (string)num;
-            label2.Text = string.Format("変数 num の値は {0} です。", num);
+            // Console.WriteLine(num);
+            // label2.Text = string.Format("変数 num の値は {0} です。", num); // Failed
+            // string msg = num.ToString();
+            // string msg2 = "である。";
+            
+            label2.Text = string.Format("変数 num の値は {0} です。", num.ToString());
+            
+            // label2.Text = string.Format("{0} {1}", msg, msg2); // Failed
+            // label2.Text = "変数 num の値は " + (num.ToString()) + "です。";
             label2.Parent = form1;
 
             PictureBox pictureBox = new PictureBox();
