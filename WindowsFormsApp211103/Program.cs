@@ -115,6 +115,24 @@ namespace WindowsFormsApp211103
                 pictureBoxes[j].Left = margin["left"] + pictureBoxes[j].Width * j + 10;
                 pictureBoxes[j].Parent = form1;
             }
+
+            Label label4 = new Label();
+            label4.Top = margin["top"];
+            label4.Left = margin["left"] + 400;
+            label4.Width = 400;
+            label4.Height = margin["lineHeight"];
+            string[] strings = new string[]
+            {
+                "Hideru",
+                "Hizuru",
+                "Alma",
+                "Sally"
+            };
+            foreach (string s in strings)
+            {
+                label4.Text += string.Format("{0}, ", s);
+            }
+            label4.Parent = form1;
             
             // Application.Run(new Form1()); // Succeeded
             Application.Run(form1);
