@@ -82,6 +82,28 @@ namespace WindowsFormsApp211103
             pictureBox.Height = 150;
             pictureBox.Parent = form1;
             
+            PictureBox pictureBox2 = new PictureBox();
+            pictureBox2.Image = Image.FromFile("C:\\Users\\Enin\\RiderProjects\\WindowsFormsApp211103\\WindowsFormsApp211103\\img\\sunSymbol2.png");
+            pictureBox2.Top = margin["top"] + margin["lineHeight"] * 2 + 150;
+            // pictureBox2.Left = pictureBox2.Width / 10;
+            pictureBox2.Width = 150;
+            pictureBox2.Height = 150;
+            pictureBox2.Left = (form1.Width - pictureBox2.Width) / 2;
+            pictureBox2.Parent = form1;
+
+            Label label3 = new Label();
+            label3.Top = margin["top"] + 260;
+            label3.Left = margin["left"];
+            label3.Width = 400;
+            label3.Height = margin["lineHeight"];
+            for (int i = 0; i < 5; i++)
+            {
+                // label3.Text += i + " 号車を表示します。\n"; // Failed 
+                label3.Height += margin["lineHeight"];
+                label3.Text += string.Format("{0} 号車を表示するで。\n", i.ToString());
+            }
+            label3.Parent = form1;
+            
             // Application.Run(new Form1()); // Succeeded
             Application.Run(form1);
         }
