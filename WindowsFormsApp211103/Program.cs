@@ -119,7 +119,7 @@ namespace WindowsFormsApp211103
             Label label4 = new Label();
             label4.Top = margin["top"];
             label4.Left = margin["left"] + 400;
-            label4.Width = 400;
+            label4.Width = 200;
             label4.Height = margin["lineHeight"];
             string[] strings = new string[]
             {
@@ -133,6 +133,58 @@ namespace WindowsFormsApp211103
                 label4.Text += string.Format("{0}, ", s);
             }
             label4.Parent = form1;
+
+            Label label5 = new Label();
+            label5.Top = margin["top"];
+            label5.Left = margin["left"] + 600;
+            label5.Width = 400;
+            label5.Height = margin["lineHeight"] * 2;
+            string[,] strings2 = new string[4, 3]
+            {
+                {"Hideru", "ヒデル", "28"},
+                {"Hizuru", "ヒヅル", "46"},
+                {"Alma", "アルマ", "37"},
+                {"Sally", "サリー", "34"}
+            };
+            string temp = "";
+            for (int k = 0; k < 4; k++)
+            {
+                temp += "(";
+                for (int l = 0; l < 3; l++)
+                {
+                    temp += strings2[k, l];
+                    if(l < 2){ temp += ", "; }
+                }
+                temp += ")\n";
+            }
+            label5.Text = temp;
+            label5.Parent = form1;
+
+            Label label6 = new Label();
+            label6.Top = margin["top"] + 100;
+            label6.Left = margin["left"] + 600;
+            label6.Width = 400;
+            label6.Height = margin["lineHeight"] * 2;
+            string[][] strings3 = new string[4][]
+            {
+                new string[] {"白金ヒデル", "Shirogane Hideru", "28"},
+                new string[] {"白金ヒヅル", "Shirogane Hizuru"},
+                new string[] {"白金アルマ", "Shirogane Alma", "37"},
+                new string[] {"サリー・Ｂ", "Sally=B"},
+            };
+            string temp6 = "";
+            for (int m = 0; m < strings3.Length; m++)
+            {
+                temp6 += "(";
+                for (int n = 0; n < strings3[m].Length; n++)
+                {
+                    temp6 += strings3[m][n];
+                    if(n < (strings3[m].Length - 1)){ temp6 += ", "; }
+                }
+                temp6 += "),\n";
+            }
+            label6.Text = temp6;
+            label6.Parent = form1;
             
             // Application.Run(new Form1()); // Succeeded
             Application.Run(form1);
