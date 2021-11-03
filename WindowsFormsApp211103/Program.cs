@@ -28,18 +28,31 @@ namespace WindowsFormsApp211103
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             
+            int num = 100;
+            Dictionary<string, int> margin = new Dictionary<string, int>()
+            {
+                {"top", 10},
+                {"right", 10},
+                {"bottom", 10},
+                {"left", 10},
+                {"lineHeight", 25}
+            };
+            
             Form1 form1 = new Form1();
             form1.Text = "Hello World!";
             form1.Width = 1000;
             form1.Height = 700;
             
-            // Label label1 = new Label();
-            // label1.Text = "Hello World Again!";
-            // label1.Parent = form1;
+            Label label1 = new Label();
+            label1.Top = margin["top"];
+            label1.Left = margin["left"];
+            label1.Text = "Hello World Again!";
+            label1.Parent = form1;
             
             Label label2 = new Label();
-            int num = 100; // Failed
 
+            label2.Top = margin["top"] + margin["lineHeight"];
+            label2.Left = margin["left"];
             label2.Width = 300; // A part of string will be hidden without this
             
             // var num = "100"; // Succeeded
@@ -62,7 +75,8 @@ namespace WindowsFormsApp211103
             // pictureBox.Image = Image.FromFile("img/sunSymbol.png");
             // pictureBox.Image = Image.FromFile("img\\sunSymbol.png");
             pictureBox.Image = Image.FromFile("C:\\Users\\Enin\\RiderProjects\\WindowsFormsApp211103\\WindowsFormsApp211103\\img\\sunSymbol.png");
-            pictureBox.Top = 30;
+            // pictureBox.Top = 60;
+            pictureBox.Top = margin["top"] + margin["lineHeight"] * 2;
             pictureBox.Left = pictureBox.Width / 10;
             pictureBox.Width = 150;
             pictureBox.Height = 150;
