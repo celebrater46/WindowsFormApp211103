@@ -29,16 +29,26 @@ namespace WindowsFormsApp211103
             
             Form1 form1 = new Form1();
             form1.Text = "Hello World!";
+            form1.Width = 1000;
+            form1.Height = 700;
             
-            Label label = new Label();
-            label.Text = "Hello World Again!";
-            label.Parent = form1;
+            // Label label1 = new Label();
+            // label1.Text = "Hello World Again!";
+            // label1.Parent = form1;
+            
+            Label label2 = new Label();
+            int num = 100;
+            // label2.Text = "変数 num の値は " + num + "です。";
+            // label2.Text = (string)num;
+            label2.Text = string.Format("変数 num の値は {0} です。", num);
+            label2.Parent = form1;
 
             PictureBox pictureBox = new PictureBox();
             // pictureBox.Image = Image.FromFile("img/sunSymbol.png");
             // pictureBox.Image = Image.FromFile("img\\sunSymbol.png");
             pictureBox.Image = Image.FromFile("C:\\Users\\Enin\\RiderProjects\\WindowsFormsApp211103\\WindowsFormsApp211103\\img\\sunSymbol.png");
             pictureBox.Top = 30;
+            pictureBox.Left = pictureBox.Width / 10;
             pictureBox.Width = 150;
             pictureBox.Height = 150;
             pictureBox.Parent = form1;
